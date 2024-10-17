@@ -48,6 +48,32 @@
             text-decoration: underline;
         }
 
+     /* Hide the menu initially in mobile view */
+        .header .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: #3f51b5;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 200px;
+            padding: 10px;
+        }
+
+        /* Hamburger Menu Icon Styling */
+        .hamburger {
+            display: none; /* Hidden by default, will show on small screens */
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
         /* Content section for demo */
         .content {
             margin-top: 60px; /* Adds margin to prevent overlap with fixed header */
