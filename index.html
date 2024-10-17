@@ -1,7 +1,54 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Thota Sivasankar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Thota Sivasankar - Personal Webpage</title>
+    <style>
+        /* Styling for the fixed top section */
+        .header {
+            background-color: #3f51b5; /* Background color of the section */
+            color: white; /* Text color */
+            padding: 10px 20px; /* Padding for spacing */
+            position: fixed; /* Makes it fixed at the top */
+            top: 0; /* Sticks to the top */
+            width: 100%; /* Full width of the page */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between name and navigation */
+            align-items: center; /* Vertically align items */
+            z-index: 1000; /* Ensures the section is on top of all content */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        }
+
+        /* Name styling */
+        .header .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Navigation links styling */
+        .header nav {
+            display: flex;
+            gap: 20px; /* Adds space between links */
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Adds hover effect to the links */
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content section for demo */
+        .content {
+            margin-top: 60px; /* Adds margin to prevent overlap with fixed header */
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
