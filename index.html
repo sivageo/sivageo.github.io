@@ -13,8 +13,6 @@
             position: fixed; /* Makes it fixed at the top */
             top: 0; /* Sticks to the top */
             width: 100%; /* Full width of the page */
-            max-width: 1200px; /* Set a maximum width for the content */
-            margin: 0 auto; /* Center the content within the page */
             display: flex; /* Use flexbox for layout */
             justify-content: space-between; /* Space between name and navigation */
             align-items: center; /* Vertically align items */
@@ -52,6 +50,27 @@
             margin-top: 60px; /* Adds margin to prevent overlap with fixed header */
             padding: 20px;
         }
+
+     /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column; /* Stack name and navigation vertically on smaller screens */
+                padding: 10px;
+                text-align: center; /* Center content */
+            }
+
+            .header nav {
+                margin-top: 10px; /* Add space between name and navigation */
+            }
+
+            .header nav a {
+                font-size: 14px; /* Smaller font size for links on small screens */
+            }
+
+            .content {
+                margin-top: 80px; /* Prevent content overlap on smaller screens */
+            }
+        }  
     </style>
 </head>
 <body>
